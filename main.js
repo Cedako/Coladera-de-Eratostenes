@@ -9,7 +9,7 @@ class App{
             }
         }
         this.eratostenes2ndTry();
-        //console.log(this.uno);
+        //Imprime el arreglo con los números descartados del arreglo "uno"
         console.log(this.cero);
 
         //Eliminiación de "false" del array.
@@ -19,9 +19,11 @@ class App{
                 i--
             }
         }
+        //Imprime en la consola el arreglo con los números primos
         console.log(this.uno)
     }
 
+    //Ineficiente como pocos métodos, pero hace la coladera hasta el 1000 correctamente.
     eratostenes2ndTry(){
         for(let i = 0; i<this.uno.length; i++){
             if ((this.uno[i]%2 === 0) && (this.uno[i]>2)){
@@ -98,6 +100,7 @@ class App{
             }
         }
     }
+    //acabo de darme cuenta de que hay un numero extra en los primos porque está incluído el 1.
 
 }
 new App;
